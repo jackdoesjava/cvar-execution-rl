@@ -1,0 +1,15 @@
+# Data
+data/
+*.csv
+*.parquet
+*.h5
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Rust
+env_engine/target/
+Cargo.lock

@@ -1,0 +1,12 @@
+[package]
+name = "env_engine"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "env_engine"
+crate-type = ["cdylib"] # Required for PyO3 Python bindings
+
+[dependencies]
+pyo3 = { version = "0.20", features = ["extension-module"] }
+dbn = "0.61.0" # Databento's official Rust decoder
